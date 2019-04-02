@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    var a = [2,7,9,11,3,1];
+    var old_a = [2,7,9,11,3,1];
+    var b = a.sort(function(a,b){return b-a;})[0];
+    console.log(b);
+
+    var count = 0;
+    function money(array,obj){
+        var i = a.length;
+        while(i--){
+            if (array[i] === obj){
+                return i ;
+            }
+        }
+        return false;
+    }
+    console.log(money(old_a,b));
+    //b = 11;
+
+    function result(){
+        var maxIndex = money(old_a,b);
+        if()
+        if(old_a[maxIndex-2]>old_a[maxIndex-3]){
+            count = old_a[maxIndex] + old_a[ma]
+        }
+    }
+    result();
+</script>
+</html>

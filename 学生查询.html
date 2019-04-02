@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #no{
+            border:1px solid black;
+            margin:auto 0;
+            width:400px;
+            height:150px;
+            position:absolute;
+            color:black;
+            font-size:23px;
+            text-align:center;
+            line-height:120px;
+        }
+        #yes{
+            width:220px;
+            height:300px;
+            position:absolute;
+            left:120px;
+            top:200px;
+            background-color: lightblue;
+        }
+        #class1,#class2,#class3{
+            width:200px;
+            height:50px;
+            margin-top:10px;
+            top:125px;
+            left:50px;
+            position:absolute;
+
+        }
+        #pass{
+            height:500px;
+            width:500px;
+            position:relative;
+            margin:0 auto;
+            top:100px;
+        }
+        h3{
+            position:absolute;
+            left:20px;
+            top:40px;
+        }
+    </style>
+</head>
+<script src="./学生查询界面AJAX.js"></script>
+<body onload="findResult()">
+<div id="pass">
+    <div id="no">您暂无选课信息</div>
+    <div id="yes">
+        <h3>您选择的课程如下:</h3>
+        <div id="class1" class="class"></div>
+        <div id="class2" class="class"></div>
+        <div id="class3" class="class"></div>
+    </div>
+</div>
+</body>
+
+</html>

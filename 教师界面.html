@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,html{
+            padding:0;
+            margin:0;
+            height:100%;
+            width:100%;
+        }
+        #title{
+            border:1px solid black;
+            background-color: lightslategrey;
+            width:400px;
+            height:40px;
+            position:relative;
+            left:760px;
+        }
+        h4{
+            margin:0 auto;
+            text-align:center;
+            line-height:40px;
+        }
+        #main{
+            border:1px solid black;
+            height:200px;
+            width:400px;
+            position: relative;
+            left:760px;
+            background-color: lightblue;
+
+        }
+        #submit{
+            position:absolute;
+            left:120px;
+            top:160px;
+        }
+        #reset{
+            position:absolute;
+            left:220px;
+            top:160px;
+        }
+        #information{
+            position:absolute;
+            left:70px;
+            top:25px;
+        }
+        #confirm{
+            position:absolute;
+            width:100%;
+            height:100%;
+            background-color: dimgray;
+            opacity: 0.8;
+            display:none;
+            z-index:10;
+        }
+        #box{
+            border:1px solid white;
+            background-color: whitesmoke;
+            width:400px;
+            height:150px;
+            position:absolute;
+            left:770px;
+            top:355px;
+            color:black;
+            font-size:23px;
+            text-align:center;
+            line-height:120px;
+        }
+        #ok{
+            position:absolute;
+            left:120px;
+            top:100px;
+        }
+        #ng{
+            position:absolute;
+            left:250px;
+            top:100px;
+        }
+        #success{
+            position:absolute;
+            width:100%;
+            height:100%;
+            background-color: black;
+            opacity: 0.8;
+            display:none;
+            z-index:10;
+        }
+        #alert{
+            border:1px solid white;
+            background-color: whitesmoke;
+            width:400px;
+            height:150px;
+            position:absolute;
+            left:770px;
+            top:355px;
+            color:black;
+            font-size:23px;
+            text-align:center;
+            line-height:150px;
+            cursor:pointer;
+        }
+        #back{
+            position:absolute;
+            left:161px;
+            top:100px;
+        }
+    </style>
+    <script src="teacherScreen_AJAX.js"></script>
+</head>
+<body>
+
+<div id="confirm">
+    <div id="box">
+        请确认是否提交
+        <button id="ok" type="submit" onclick="loadXMLDoc()">确认</button>
+        <button id="ng" onclick="cancle();">取消</button>
+    </div>
+</div>
+
+<div id="success">
+    <div id="alert">
+        <!--<button id="back">返回主页面</button>
+        按钮消失问题未解决，采用点击DIV方式返回-->
+    </div>
+</div>
+
+<div id="title">
+    <h4>学生基本信息录入</h4>
+</div>
+<div id="main">
+    <div id="information">
+    <div>课程编号：<input type="text" id="classId" placeholder="课程编号"></div>
+    <div>课程名称：<input type="text" id="className" placeholder="课程名称"></div>
+    <div>课程学分：<input type="text" id="count" placeholder="课程学分"></div>
+    </div>
+    <button id="submit" onclick = "firstSubmit();">提交</button>
+    <button id="reset" onclick ="reset();">重置</button>
+</div>
+</body>
+<script src="StudentHtmlControl.js"></script>
+</html>

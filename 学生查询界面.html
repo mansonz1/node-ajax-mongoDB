@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #main{
+            border:1px solid black;
+            background-color: whitesmoke;
+            width:400px;
+            height:150px;
+            position:absolute;
+            left:770px;
+            top:355px;
+            color:black;
+            font-size:23px;
+            text-align:center;
+            line-height:120px;
+        }
+        #btn1{
+            position:absolute;
+            left:100px;
+            top:70px;
+        }
+        #btn2{
+            position:absolute;
+            left:230px;
+            top:70px;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <button id="btn1">选课</button>
+    <button id="btn2">查询选课</button>
+</div>
+</body>
+<script>
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+
+    btn1.onclick = function(){
+        window.location.href = "学生选课.html"
+    };
+    btn2.onclick = function(){
+        window.location.href = "学生查询.html"
+    }
+</script>
+</html>
